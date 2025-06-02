@@ -71,14 +71,6 @@ export const ContactSection = () => {
                 >
                   <Linkedin className="h-6 w-6" />
                 </a>
-                <a 
-                  href="https://www.instagram.com/_mau_sumi__/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-purple-900/30 hover:border-purple-500/50 text-white/80 hover:text-pink-300 transition-all"
-                >
-                  <Instagram className="h-6 w-6" />
-                </a>
               </div>
             </div>
           </div>

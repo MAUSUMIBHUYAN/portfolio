@@ -20,14 +20,14 @@
   --animate-meteor: meteor 5s linear infinite;
 
   @keyframes float {
-    0%,
-    100% {
+    0%, 100% {
       transform: translateY(0);
     }
     50% {
       transform: translateY(-10px);
     }
   }
+
   @keyframes pulse-subtle {
     0%, 100% {
       opacity: 0.7;
@@ -51,21 +51,22 @@
       transform: translateY(0);
     }
   }
-  
 }
+
 @keyframes meteor {
-    0% {
-      transform: rotate(215deg) translateX(0);
-      opacity: 1;
-    }
-    70% {
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(215deg) translateX(-500px);
-      opacity: 0;
-    }
+  0% {
+    transform: rotate(215deg) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(215deg) translateX(-500px);
+    opacity: 0;
+  }
 }
+
 @layer base {
   :root {
     --background: 210 40% 98%;
@@ -160,9 +161,12 @@
     animation: meteor 5s linear infinite;
     filter: drop-shadow(0 0 6px rgba(173, 216, 230, 0.7));
   }
+
+  .star-background {
+    @apply fixed inset-0 z-0 overflow-hidden pointer-events-none;
+    background: linear-gradient(to bottom, #1a1a2e, #3f0071, #240046);
+  }
 }
-
-
 
 #root {
   max-width: 100%;
