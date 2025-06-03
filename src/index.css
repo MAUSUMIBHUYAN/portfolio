@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+html, body {
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: hsl(var(--background)); 
+}
 @theme {
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));

@@ -7,7 +7,10 @@ export const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden"
+      className="relative flex flex-col items-center justify-center px-4 overflow-hidden"
+      style={{
+        minHeight: '100dvh',
+      }}
     >
       
       <div className="container max-w-4xl mx-auto text-center z-10">
