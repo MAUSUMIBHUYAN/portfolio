@@ -1,8 +1,18 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, ExternalLink, Github, Globe } from "lucide-react";
 
 const projects = [
   {
     id: 1,
+    title: "QuizMaster App",
+    description: "QuizMaster is a React + Firebase quiz platform that lets users sign in securely and take topic-based quizzes, while tracking results for later review.",
+    image: "quiz-app.png",
+    tags: ["React", "Firebase"],
+    demoUrl: "quiz-app.mp4",
+    websiteUrl: "https://quiz-app-chi-wheat.vercel.app/",
+    githubUrl: "https://github.com/MAUSUMIBHUYAN/quiz-app",
+  },
+  {
+    id: 2,
     title: "Vision Based Navigation",
     description: "Created a GPS-independent autonomous drone landing system using onboard computer vision to detect colored markers for precise navigation and landing.",
     image: "drone.jpg",
@@ -11,16 +21,17 @@ const projects = [
     githubUrl: "https://github.com/MAUSUMIBHUYAN/Vision-Based-Navigation",
   },
   {
-    id: 2,
+    id: 3,
     title: "Creovate Website",
     description: "Designed a dynamic website for Creovate featuring fully engaging animations, and interactive user experiences.",
     image: "creovate.png",
-    tags: ["HTML/CSS", "Javascript", "React","tailwindCss"],
+    tags: ["HTML/CSS", "Javascript", "React", "tailwindCss"],
     demoUrl: "creovate.mp4",
+    websiteUrl: "https://creovate-react.vercel.app/",
     githubUrl: "https://github.com/MAUSUMIBHUYAN/Creovate-react",
   },
   {
-    id: 3,
+    id: 4,
     title: "Task Management System",
     description: "Built a web-based Task Management System to streamline team collaboration, optimize task assignments, and enable real-time progress tracking.",
     image: "Task.png",
@@ -29,7 +40,7 @@ const projects = [
     githubUrl: "https://github.com/MAUSUMIBHUYAN/Task-Management-System",
   },
   {
-    id: 4,
+    id: 5,
     title: "Traffic Light Controller",
     description: "Developed a traffic light controller that optimized traffic flow, reducing congestion and improving travel time at a key intersection.",
     image: "traffic.png",
@@ -45,7 +56,7 @@ export const ProjectsSection = () => {
       {/* Cosmic decoration elements */}
       <div className="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-purple-400 opacity-60 animate-pulse animate-float"></div>
       <div className="absolute bottom-1/3 right-20 w-3 h-3 rounded-full bg-pink-300 opacity-50 animate-pulse animate-float delay-1000"></div>
-      
+
       <div className="container mx-auto max-w-5xl relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center text-white/90 opacity-0 animate-fade-in">
           Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300">Projects</span>
@@ -87,26 +98,42 @@ export const ProjectsSection = () => {
                 <p className="text-white/90 text-sm mb-5">
                   {project.description}
                 </p>
+
                 <div className="flex justify-between items-center">
-                  <div className="flex space-x-4">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white/80 hover:text-purple-300 transition-colors duration-300 flex items-center gap-1 text-sm"
-                    >
-                      <ExternalLink size={16} />
-                      <span>Demo</span>
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white/80 hover:text-pink-300 transition-colors duration-300 flex items-center gap-1 text-sm"
-                    >
-                      <Github size={16} />
-                      <span>Code</span>
-                    </a>
+                  <div className="flex space-x-4 flex-wrap">
+                    {project.demoUrl && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white/80 hover:text-purple-300 transition-colors duration-300 flex items-center gap-1 text-sm"
+                      >
+                        <ExternalLink size={16} />
+                        <span>Demo</span>
+                      </a>
+                    )}
+                    {project.websiteUrl && (
+                      <a
+                        href={project.websiteUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white/80 hover:text-blue-300 transition-colors duration-300 flex items-center gap-1 text-sm"
+                      >
+                        <Globe size={16} />
+                        <span>Website</span>
+                      </a>
+                    )}
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white/80 hover:text-pink-300 transition-colors duration-300 flex items-center gap-1 text-sm"
+                      >
+                        <Github size={16} />
+                        <span>Code</span>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

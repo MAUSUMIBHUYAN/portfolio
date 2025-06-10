@@ -7,7 +7,7 @@ const skills = [
   { name: "HTML/CSS", level: 80, category: "web", icon: <Code className="w-5 h-5" /> },
   { name: "JavaScript", level: 75, category: "web", icon: <Code className="w-5 h-5" /> },
   { name: "React", level: 70, category: "web", icon: <Code className="w-5 h-5" /> },
-  { name: "React", level: 70, category: "web", icon: <Code className="w-5 h-5" /> },
+  { name: "Firebase", level: 70, category: "web", icon: <Code className="w-5 h-5" /> },
 
   // Programming Languages
   { name: "Python", level: 80, category: "programming", icon: <Cpu className="w-5 h-5" /> },
