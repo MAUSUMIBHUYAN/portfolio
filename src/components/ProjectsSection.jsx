@@ -3,6 +3,16 @@ import { ArrowRight, ExternalLink, Github, Globe } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "Social Media Website",
+    description: "A full-stack social media platform with user authentication, real-time posts, likes, and community-driven interactions.",
+    image: "social-media.png",
+    tags: ["React", "Supabase","PostgreSQL"],
+    demoUrl: "social-media.mp4",
+    websiteUrl: "https://social-media-website-liard.vercel.app/",
+    githubUrl: "https://github.com/MAUSUMIBHUYAN/social-media",
+  },
+  {
+    id: 2,
     title: "QuizMaster App",
     description: "QuizMaster is a React + Firebase quiz platform that lets users sign in securely and take topic-based quizzes, while tracking results for later review.",
     image: "quiz-app.png",
@@ -12,7 +22,7 @@ const projects = [
     githubUrl: "https://github.com/MAUSUMIBHUYAN/quiz-app",
   },
   {
-    id: 2,
+    id: 3,
     title: "Vision Based Navigation",
     description: "Created a GPS-independent autonomous drone landing system using onboard computer vision to detect colored markers for precise navigation and landing.",
     image: "drone.jpg",
@@ -21,7 +31,7 @@ const projects = [
     githubUrl: "https://github.com/MAUSUMIBHUYAN/Vision-Based-Navigation",
   },
   {
-    id: 3,
+    id: 4,
     title: "Creovate Website",
     description: "Designed a dynamic website for Creovate featuring fully engaging animations, and interactive user experiences.",
     image: "creovate.png",
@@ -31,7 +41,7 @@ const projects = [
     githubUrl: "https://github.com/MAUSUMIBHUYAN/Creovate-react",
   },
   {
-    id: 4,
+    id: 5,
     title: "Task Management System",
     description: "Built a web-based Task Management System to streamline team collaboration, optimize task assignments, and enable real-time progress tracking.",
     image: "Task.png",
@@ -40,7 +50,7 @@ const projects = [
     githubUrl: "https://github.com/MAUSUMIBHUYAN/Task-Management-System",
   },
   {
-    id: 5,
+    id: 6,
     title: "Traffic Light Controller",
     description: "Developed a traffic light controller that optimized traffic flow, reducing congestion and improving travel time at a key intersection.",
     image: "traffic.png",
