@@ -8,7 +8,7 @@ const projects = [
     image: "social-media.png",
     tags: ["React", "Supabase","PostgreSQL"],
     demoUrl: "social-media.mp4",
-    websiteUrl: "https://social-media-website-liard.vercel.app/",
+    websiteUrl: "https://social-media-website-liard.wvercel.app/",
     githubUrl: "https://github.com/MAUSUMIBHUYAN/social-media",
   },
   {
