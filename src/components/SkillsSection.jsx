@@ -1,14 +1,18 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { Code, Cpu, Settings } from "lucide-react";
+import { Code, Cpu, Settings,Smartphone } from "lucide-react";
 
 const skills = [
   // Web Development
   { name: "HTML/CSS", level: 80, category: "web", icon: <Code className="w-5 h-5" /> },
   { name: "JavaScript", level: 75, category: "web", icon: <Code className="w-5 h-5" /> },
   { name: "React", level: 70, category: "web", icon: <Code className="w-5 h-5" /> },
+  { name: "NextJs", level: 60, category: "web", icon: <Code className="w-5 h-5" /> },
   { name: "Firebase", level: 70, category: "web", icon: <Code className="w-5 h-5" /> },
   { name: "Supabase", level: 70, category: "web", icon: <Code className="w-5 h-5" /> },
+  
+  //mobile
+  { name: "React-Native", level: 70, category: "mobile", icon: <Code className="w-5 h-5" /> },
 
   // Programming Languages
   { name: "Python", level: 80, category: "programming", icon: <Cpu className="w-5 h-5" /> },
@@ -17,7 +21,7 @@ const skills = [
 
   // Tools Environment
   { name: "VS Code", level: 90, category: "tools", icon: <Settings className="w-5 h-5" /> },
-  { name: "Git/GitHub", level: 90, category: "tools", icon: <Settings className="w-5 h-5" /> },
+  { name: "GitHub", level: 90, category: "tools", icon: <Settings className="w-5 h-5" /> },
   { name: "Gazebo", level: 70, category: "tools", icon: <Settings className="w-5 h-5" /> },
   { name: "Canva", level: 90, category: "tools", icon: <Settings className="w-5 h-5" /> },
 ];
@@ -25,6 +29,7 @@ const skills = [
 const categories = [
   { name: "all", icon: null },
   { name: "web", icon: <Code className="w-4 h-4" /> },
+  { name: "mobile", icon: <Smartphone className="w-4 h-4" /> },
   { name: "programming", icon: <Cpu className="w-4 h-4" /> },
   { name: "tools", icon: <Settings className="w-4 h-4" /> },
 ];
