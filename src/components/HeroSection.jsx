@@ -37,7 +37,7 @@ export const HeroSection = () => {
               href="#projects" 
               className="relative inline-flex items-center justify-center px-8 py-3 overflow-hidden text-lg font-medium text-white transition-all duration-300 rounded-full group cosmic-button"
               onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
+              onMouseLeave={() => setIsHovered(false)}f
             >
               <span className="relative z-10">
                 View My Projects
@@ -52,8 +52,8 @@ export const HeroSection = () => {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-float">
         <span className="text-sm text-white/60 mb-2">Scroll Down</span>
         <div className="relative">
-          <ArrowDown className="h-6 w-6 text-purple-300 animate-pulse" />
-          <div className="absolute inset-0 rounded-full bg-purple-300/20 animate-ping -z-10"></div>
+          <ArrowDown className="h-6 w-6 text-purple-300" />
+          
         </div>
       </div>
     </section>
