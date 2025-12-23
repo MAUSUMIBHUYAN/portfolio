@@ -3,6 +3,14 @@ import { ArrowRight, ExternalLink, Github, Globe, Smartphone } from "lucide-reac
 const projects = [
   {
     id: 1,
+    title: "Autonomous Drone Landing on a Moving Platform",
+    description: "Developing an drone landing system that combines vision-based tracking and Kalman filtering to achieve precise autonomous landings on a moving platform.",
+    image: "moving.png",
+    tags: ["Python", "Gazebo", "KalmanFilter"],
+    githubUrl: "https://github.com/MAUSUMIBHUYAN/Landing-drone-on-moving-platform",
+  },
+  {
+    id: 2,
     title: "RecipeTips App",
     description: "A mobile app to share and explore food recipes with real-time features.",
     image: "Recipe.jpg",
@@ -12,27 +20,7 @@ const projects = [
     githubUrl: "https://github.com/MAUSUMIBHUYAN/RecipeTipsApp",
   },
   {
-    id: 2,
-    title: "Social Media Website",
-    description: "A full-stack social media platform with user authentication, real-time posts, likes, and community-driven interactions.",
-    image: "social-media.png",
-    tags: ["React", "Supabase", "PostgreSQL"],
-    demoUrl: "social-media.mp4",
-    websiteUrl: "https://social-media-website-liard.wvercel.app/",
-    githubUrl: "https://github.com/MAUSUMIBHUYAN/social-media",
-  },
-  {
     id: 3,
-    title: "QuizMaster App",
-    description: "QuizMaster is a React + Firebase quiz platform that lets users sign in securely and take topic-based quizzes, while tracking results for later review.",
-    image: "quiz-app.png",
-    tags: ["React", "Firebase"],
-    demoUrl: "quiz-app.mp4",
-    websiteUrl: "https://quiz-app-chi-wheat.vercel.app/",
-    githubUrl: "https://github.com/MAUSUMIBHUYAN/quiz-app",
-  },
-  {
-    id: 4,
     title: "Vision Based Navigation",
     description: "Created a GPS-independent autonomous drone landing system using onboard computer vision to detect colored markers for precise navigation and landing.",
     image: "drone.jpg",
@@ -41,24 +29,17 @@ const projects = [
     githubUrl: "https://github.com/MAUSUMIBHUYAN/Vision-Based-Navigation",
   },
   {
-    id: 5,
-    title: "Creovate Website",
-    description: "Designed a dynamic website for Creovate featuring fully engaging animations, and interactive user experiences.",
-    image: "creovate.png",
-    tags: ["HTML/CSS", "Javascript", "React", "tailwindCss"],
-    demoUrl: "creovate.mp4",
-    websiteUrl: "https://creovate-react.vercel.app/",
-    githubUrl: "https://github.com/MAUSUMIBHUYAN/Creovate-react",
+    id: 4,
+    title: "QuizMaster App",
+    description: "QuizMaster is a React + Firebase quiz platform that lets users sign in securely and take topic-based quizzes, while tracking results for later review.",
+    image: "quiz-app.png",
+    tags: ["React", "Firebase"],
+    demoUrl: "quiz-app.mp4",
+    websiteUrl: "https://quiz-app-chi-wheat.vercel.app/",
+    githubUrl: "https://github.com/MAUSUMIBHUYAN/quiz-app",
   },
-  {
-    id: 6,
-    title: "Traffic Light Controller",
-    description: "Developed a traffic light controller that optimized traffic flow, reducing congestion and improving travel time at a key intersection.",
-    image: "traffic.png",
-    tags: ["Python", "Reinforcement Learning", "Sumo"],
-    demoUrl: "traffic video.mp4",
-    githubUrl: "https://github.com/MAUSUMIBHUYAN/Traffic-light-controller",
-  },
+  
+  
 ];
 
 export const ProjectsSection = () => {
